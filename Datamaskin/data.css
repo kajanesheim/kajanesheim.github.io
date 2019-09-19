@@ -1,0 +1,12 @@
+article {
+    background-color: antiquewhite;
+}
+
+article h1 {
+    color: grey;
+}
+
+article > h1 {
+    color:grey;
+}
+

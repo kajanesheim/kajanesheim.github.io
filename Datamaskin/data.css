@@ -10,3 +10,6 @@ article > h1 {
     color:grey;
 }
 
+img {
+    width: 200px;
+}

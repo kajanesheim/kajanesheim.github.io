@@ -1,25 +1,90 @@
-#controll {}
+#controll {
+    left: 105px;
+    top: 40px;
+    width: 130px;
+    height: 70px;
+    background-color: lightblue;
+    border: solid black 1px;
+    border-radius: 10px;
+    text-align: center;
 
-#processor {}
+}
 
-#registers {}
+#processor {
+    left: 70px;
+    top: 125px;
+    width: 200px;
+    height: 200px;
+    background-color: khaki;
+    border: solid black 2px;
+    border-radius: 10px;
+    text-align: center;
+}
 
-#alu {}
+#registers {
+    left: 35px;
+    top: 20px;
+    width: 130px;
+    height: 70px;
+    background-color: lightblue;
+    border: solid black 1px;
+    border-radius: 10px;
+    text-align: center;
+}
 
-#memory {}
+#alu {
+    left: 35px;
+    top: 110px;
+    width: 130px;
+    height: 70px;
+    background-color: lightblue;
+    border: solid black 1px;
+    border-radius: 10px;
+    text-align: center;
+}
 
-#input {}
+#memory {
+    left: 280px;
+    top: 430px;
+    width: 130px;
+    height: 70px;
+    background-color: lightblue;
+    border: solid black 1px;
+    border-radius: 10px;
+    text-align: center;
+}
 
-#output{}
+#input {
+    left: 20px;
+    top: 300px;
+    width: 130px;
+    height: 70px;
+    background-color: lightblue;
+    border: solid black 1px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#output{
+    left: 540px;
+    top: 300px;
+    width: 130px;
+    height: 70px;
+    background-color: lightblue;
+    border: solid black 1px;
+    border-radius: 10px;
+    text-align: center;
+}
 
 #cpu {
-    left: 100px;
+    left: 170px;
     top: 50px;
     width: 350px;
     height: 350px;
     background-color: bisque;
     border: solid black 2px;
     border-radius: 10px;
+    text-align: center;
 }
 
 .firkant {
@@ -28,5 +93,5 @@
     top: 0;
     width: 100px;
     height: 100px;
-    background-color: lightsalmon;
+    background-color: rgba(100, 140, 192, 0.877);
 }

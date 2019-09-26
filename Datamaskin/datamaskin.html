@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,23 @@
     <title>Datamaskinens oppbygning</title>
     <link rel="stylesheet" href="data.css">
 </head>
+
 <body>
+    <script>
+        function hide(e) {
+            let t = document.getElementById("hide");
+            t.style.position = "relative";
+            let left = +(t.style.left.replace("px", "")) + 20;
+            t.style.left = left + "px";
+        }
+        function helpme() {
+            // alert ("HELP ME");
+            document.location.href = "https://vg.no";
+        }
+    </script>
     <header>
         <h1>Datamaskinens oppbygning og virkemåte</h1>
+        <button id="hide" onclick="helpme()" onmouseover="hide()">Help me</button>
     </header>
     <main>
         <article>
@@ -18,9 +33,10 @@
                 <h1>Intel</h1>
                 <p>
                     Intel er en amerikansk produsent av mirkoprosesser.
-                    <br>Firmaet ble grunnlagt 18 juli 1968 av fysiker Robert Noyce, 
+                    <br>Firmaet ble grunnlagt 18 juli 1968 av fysiker Robert Noyce,
                     og kjemikerne Gordon Moore og Andrew Grove.
-                    <br>Selskapet var verdens største innen halvlederteknologi frem til det ble forbigått av Samsung i 2017.
+                    <br>Selskapet var verdens største innen halvlederteknologi frem til det ble forbigått av Samsung i
+                    2017.
                     <br>For 5-6 år siden var en standar størrelse 32 bit
                     <br>Dagens CPUer er 64bit.
                     <br>Dagens CPU kan jobbe med tall 2^64 = 18446744073709551616
@@ -31,9 +47,9 @@
                 </p>
                 <h1>AMD</h1>
                 <p>
-                    AMD står for Advanced Micro Devices, 
+                    AMD står for Advanced Micro Devices,
                     og er er en amerikansk storprodusent av mikroprosessorer.
-                    <br>Selskapet ble grunnlagt i 1969, og har sitt hovedkvarter i Sunneyvale i California. 
+                    <br>Selskapet ble grunnlagt i 1969, og har sitt hovedkvarter i Sunneyvale i California.
                     Hovedkonkurrenten er Intel.
                     <div>
                         <!-- bilde av en AMD valgfritt -->
@@ -43,22 +59,23 @@
                 <h1>ARM</h1>
                 <p>
                     Acorn (Advanced) RISC (Reduced Intruction Set Computer) Machine.
-                        ARMs prosessorer brukes som hovedprosessoren for de fleste mobiltelefoner.
-                        <br>RISC CPUer har få og enkle intruksjoner (i motsetning til Intel). 
-                        Hver intruksjon skal ta minst mulig tid
-                        <br>Et karakteristisk trekk ved ARMs prosessorer er deres lave strømforbruk, 
-                        noe som gjør dem spesielt egnet for bruk i bærbare enheter. 
-                        Nesten alle moderne mobiltelefoner og personlige digitale assistenter inneholder ARM prosessorer, 
-                        noe som gjør dem til den mest brukte 32-bit mikroprosessorfamilien i verden.
-                        <div>
-                            <!-- bilde av en arm brukt i en mobil -->
-                            <img id="ARM" src="ARM.png" alt="ARM">
-                        </div>
+                    ARMs prosessorer brukes som hovedprosessoren for de fleste mobiltelefoner.
+                    <br>RISC CPUer har få og enkle intruksjoner (i motsetning til Intel).
+                    Hver intruksjon skal ta minst mulig tid
+                    <br>Et karakteristisk trekk ved ARMs prosessorer er deres lave strømforbruk,
+                    noe som gjør dem spesielt egnet for bruk i bærbare enheter.
+                    Nesten alle moderne mobiltelefoner og personlige digitale assistenter inneholder ARM prosessorer,
+                    noe som gjør dem til den mest brukte 32-bit mikroprosessorfamilien i verden.
+                    <div>
+                        <!-- bilde av en arm brukt i en mobil -->
+                        <img id="ARM" src="ARM.png" alt="ARM">
+                    </div>
                 </p>
                 <p>
                     Prosessoren er hjernen i datamaskinen.
                     <br>Hastigheten på en CPU er mellom 2-4 GHz for nye maskiner.
-                    <br>Prosessoren er hovedregne-/prosesseringsenheten i en datamaskin som utfører instruksjonene gitt i et dataprogram, 
+                    <br>Prosessoren er hovedregne-/prosesseringsenheten i en datamaskin som utfører instruksjonene gitt
+                    i et dataprogram,
                     og den er det primære elementet som gjennomfører datamaskinens funksjoner.
                 </p>
             </div>
@@ -69,7 +86,7 @@
                 <p>
                     RAM er en forkortelse som betyr
                     Random Access Memory
-                    <br>ROM er en forkortelse for Read-only memory. 
+                    <br>ROM er en forkortelse for Read-only memory.
                     ROM er et lagringsmedium som brukes i digitale kretser.
                 </p>
             </div>
@@ -91,4 +108,5 @@
         Denne siden er laget av Kaja Nesheim ved vscode
     </footer>
 </body>
+
 </html>

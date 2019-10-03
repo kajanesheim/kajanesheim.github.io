@@ -1,0 +1,42 @@
+#circle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color:blue;
+    border-radius: 50%;
+    left: 40px;
+}
+
+#circletwo {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: green;
+    border-radius: 50%;
+    right: 40px;
+    bottom: 100px;
+}
+
+#circlethree {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color:pink;
+    border-radius: 50%;
+    left: 40px;
+    bottom: 100px;
+}
+
+#circlefour {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color:red;
+    border-radius: 50%;
+    right: 40px;
+}
+
+h1 {
+    text-align: center;
+    transform: rotateY(180deg);
+}

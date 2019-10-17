@@ -13,3 +13,22 @@ article > h1 {
 img {
     width: 200px;
 }
+
+td, th,
+table {
+    border: solid grey 1px;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: beige;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+thead {
+    background-color: bisque
+}

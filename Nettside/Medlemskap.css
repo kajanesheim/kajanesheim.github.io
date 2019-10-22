@@ -1,0 +1,63 @@
+span.overskrift1 {
+    color: lightslategrey;
+    font-size: 20px;
+    }
+    
+    h1 {
+    color: lightskyblue;
+    text-align: left;
+    }
+    
+    h2 {
+    color: lightblue;
+    top: 150px;
+    font-size: 20px;
+    }
+    
+    div {
+    position: fixed;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    top: 200px;
+    }
+    
+    th {
+    text-align: left;
+    color: lightblue;
+    }
+    
+    td,
+    th,
+    table {
+    border: solid gray 1px;
+    padding: 2px;
+    }
+    
+    #velg {
+    top: 100px;
+    left: 5px;
+    }
+    
+    #alder {
+    top: 100px;
+    left: 210px;
+    }
+    
+    #navn {
+    top: 100px;
+    left: 350px;
+    }
+    
+    #etternavn {
+    top: 100px;
+    left: 490px;
+    }
+    
+    #knapp {
+    top: 118px;
+    left: 625px;
+    }

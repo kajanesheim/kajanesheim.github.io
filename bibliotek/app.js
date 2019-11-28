@@ -21,6 +21,10 @@ app.get("/", function (req, res) {
   res.send({ msg: "ok" });
 });
 
+app.get("/hei", function (req, res) {
+  res.send({ msg: "Velkommmen" });
+});
+
 app.post("/runsql", function (req, res) {
   let data = req.body;
   runsql(res, data);

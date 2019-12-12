@@ -1,0 +1,95 @@
+h1 {
+    color: darkred;
+    height: 8vh;
+    text-align: center;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+#julekal {
+    background-image: url(julebilde.jpg);
+    background-size: cover;
+    border: solid 1px grey;
+    width: 90vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.luker {
+    width: 90px;
+    height: 70px;
+    border: solid red 2px;
+    text-align: center;
+    color: black;
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+}
+
+.luker:nth-child(1):hover {
+    background-image: url(b1.jpg)
+}
+.luker:nth-child(2):hover {
+    background-image: url(b2.jpg)
+}
+.luker:nth-child(3):hover {
+    background-image: url(b3.jpg)
+}
+.luker:nth-child(4):hover {
+    background-image: url(b4.jpg)
+}
+.luker:nth-child(5):hover {
+    background-image: url(b5.jpg)
+}
+.luker:nth-child(6):hover {
+    background-image: url(b6.jpg)
+}
+.luker:nth-child(7):hover {
+    background-image: url(b7.jpg)
+}
+.luker:nth-child(8):hover {
+    background-image: url(b8.jpg)
+}
+.luker:nth-child(9):hover {
+    background-image: url(b9.jpg)
+}
+.luker:nth-child(10):hover {
+    background-image: url(b10.jpg)
+}
+.luker:nth-child(11):hover {
+    background-image: url(b11.jpg)
+}
+.luker:nth-child(12):hover {
+    background-image: url(b12.jpg)
+}
+.luker:nth-child(13):hover {
+    background-image: url(b13.jpg)
+}
+.luker:nth-child(14):hover {
+    background-image: url(b14.jpg)
+}
+.luker:nth-child(15):hover {
+    background-image: url(b15.jpg)
+}
+.luker:nth-child(16):hover {
+    background-image: url(b16.jpg)
+}
+.luker:nth-child(17):hover {
+    background-image: url(b17.jpg)
+}
+.luker:nth-child(18):hover {
+    background-image: url(b18.jpg)
+}
+.luker:nth-child(19):hover {
+    background-image: url(b19.jpg)
+}
+.luker:nth-child(17):hover {
+    background-image: url(b17.jpg)
+}

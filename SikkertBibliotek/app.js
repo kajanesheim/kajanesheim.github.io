@@ -18,8 +18,7 @@ const crypto = require("crypto");
 const userlist = {
   1: { id: 1, username: "admin", password: umd5("1230") },
   2: { id: 2, username: "bib1", password: umd5("1234") },
-  3: { id: 3, username: "bib2", password: umd5("1235") },
-  4: { id: 4, username: "kaja", password: umd5("1231") }
+  3: { id: 3, username: "bib2", password: umd5("1235") }
 };
 const _username2id = { admin: 1, bib1: 2, bib2: 3 };
 
@@ -124,8 +123,7 @@ app.post("/runsql", function(req, res) {
   let data = req.body;
   if (req.isAuthenticated()) {
     // kan også ha sjekk på brukernavn
-    if (user.username === "admin"
-    ||user.username === "kaja") {
+    if (user.username === "admin") {
       runsql(res, data);
     } else {
       safesql(user, res, data);
@@ -250,7 +248,7 @@ async function runsql(res, obj) {
     })
     .catch(error => {
       console.log("ERROR:", sql, ":", error.message); // print error;
-      results = {};
+      results = { error:error.message };
     });
   res.send({ results });
 }

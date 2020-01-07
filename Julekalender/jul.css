@@ -1,5 +1,5 @@
 h1 {
-    color: darkred;
+    color:blue;
     height: 8vh;
     text-align: center;
 }
@@ -9,9 +9,11 @@ body {
 }
 
 #julekal {
-    background-image: url(julebilde.jpg);
+    position: relative;
+    background-image: url("jul.png");
     background-size: cover;
-    border: solid 1px grey;
+    background-position: center;
+    border: solid 1px gray;
     width: 90vw;
     height: 80vh;
     display: grid;
@@ -22,74 +24,88 @@ body {
 }
 
 .luker {
-    width: 90px;
-    height: 70px;
-    border: solid red 2px;
-    text-align: center;
-    color: black;
-    background-color: transparent;
-    background-position: center;
-    background-size: cover;
-    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 60px;
+    border: solid red 1px;
+    background-color: green;
 }
 
-.luker:nth-child(1):hover {
-    background-image: url(b1.jpg)
+.luker.target {
+  background-image: url("b1.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
 }
-.luker:nth-child(2):hover {
-    background-image: url(b2.jpg)
+
+.luker.open {
+    background-color: white;
 }
-.luker:nth-child(3):hover {
-    background-image: url(b3.jpg)
-}
-.luker:nth-child(4):hover {
-    background-image: url(b4.jpg)
-}
-.luker:nth-child(5):hover {
-    background-image: url(b5.jpg)
-}
-.luker:nth-child(6):hover {
-    background-image: url(b6.jpg)
-}
-.luker:nth-child(7):hover {
-    background-image: url(b7.jpg)
-}
-.luker:nth-child(8):hover {
-    background-image: url(b8.jpg)
-}
-.luker:nth-child(9):hover {
-    background-image: url(b9.jpg)
-}
-.luker:nth-child(10):hover {
-    background-image: url(b10.jpg)
-}
-.luker:nth-child(11):hover {
-    background-image: url(b11.jpg)
-}
-.luker:nth-child(12):hover {
-    background-image: url(b12.jpg)
-}
-.luker:nth-child(13):hover {
-    background-image: url(b13.jpg)
-}
-.luker:nth-child(14):hover {
-    background-image: url(b14.jpg)
-}
-.luker:nth-child(15):hover {
-    background-image: url(b15.jpg)
-}
-.luker:nth-child(16):hover {
-    background-image: url(b16.jpg)
-}
-.luker:nth-child(17):hover {
-    background-image: url(b17.jpg)
-}
-.luker:nth-child(18):hover {
-    background-image: url(b18.jpg)
-}
-.luker:nth-child(19):hover {
-    background-image: url(b19.jpg)
-}
-.luker:nth-child(17):hover {
-    background-image: url(b17.jpg)
-}
+
+
+
+
+.santa {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 60px;
+    height: 60px;
+    background-image: url("santa.png");
+    border-radius: 50%;
+    z-index:1;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .child {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 38px;
+    height: 60px;
+    background-image: url("barn.png");
+    background-position-x: 0px;
+    background-size: 295px;
+    z-index:0;
+  }
+  
+  .child.p1 {
+    background-position-x: 80px;
+  }
+  
+  .child.p2 {
+    background-position-x: 150px;
+  }
+  
+  .child.p3 {
+    background-position-x: 114px;
+  }
+  
+  .child.p4 {
+    background-position-x: 190px;
+  }
+  .child.p5 {
+    background-position-x: 225px;
+  }
+  .child.p6 {
+    background-position-x: 258px;
+  }
+  .child.p7 {
+    background-position-x: 292px;
+  }
+  .child.p0 {
+    background-position-x: 332px;
+  }
+  
+  animation: snow 20s linear infinite,
+  @keyframes snow {
+    0% {transform: translate (0,0);}
+    5% {transform: translate (-15px,40px);}
+    100% {transform: translate (0,400px);}
+  }
+  
